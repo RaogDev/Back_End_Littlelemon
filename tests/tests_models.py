@@ -1,6 +1,7 @@
 from django.test import TestCase
 from restaurant.models import Menu
 
+
 class MenuTest(TestCase):
     def instance(self):
         return Menu.objects.create(title='IceCream', price=80, inventory=20)
