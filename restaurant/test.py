@@ -11,7 +11,6 @@ class MenuTest(TestCase):
         item = self.instance()
         self.assertEqual(str(item), "IceCream : 80")
 
-
 class MenuViewTest(TestCase):
     def setup(self):
         Menu.objects.create(Title="Rice", Price=1, Inventory=10)
